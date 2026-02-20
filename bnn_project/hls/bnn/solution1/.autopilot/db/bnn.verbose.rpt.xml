@@ -1,0 +1,451 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'bnn'" level="0">
+<item name = "Date">Sat Dec 13 15:03:20 2025
+</item>
+<item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
+<item name = "Project">bnn</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 8.568 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">188, 188, 1.880 us, 1.880 us, 64, 64, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="entry_proc_U0">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="Block_entry_gmem_rd_proc_U0">Block_entry_gmem_rd_proc, 32, 32, 0.320 us, 0.320 us, 32, 32, no</column>
+<column name="dense_layer_U0">dense_layer, 72, 72, 0.720 us, 0.720 us, 64, 64, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="sign_and_quantize_U0">sign_and_quantize, 9, 9, 90.000 ns, 90.000 ns, 4, 4, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="dense_layer_1_U0">dense_layer_1, 37, 37, 0.370 us, 0.370 us, 32, 32, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="sign_and_quantize_2_U0">sign_and_quantize_2, 6, 6, 60.000 ns, 60.000 ns, 2, 2, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="dense_layer_3_U0">dense_layer_3, 10, 10, 0.100 us, 0.100 us, 5, 5, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="Block_entry_gmem_wr_proc_U0">Block_entry_gmem_wr_proc, 16, 16, 0.160 us, 0.160 us, 16, 16, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 36, -</column>
+<column name="FIFO">-, -, 23166, 15911, -</column>
+<column name="Instance">33, -, 15641, 32541, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 72, -</column>
+<column name="Register">-, -, 8, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">11, 0, 36, 91, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="Block_entry_gmem_rd_proc_U0">Block_entry_gmem_rd_proc, 0, 0, 1602, 405, 0</column>
+<column name="Block_entry_gmem_wr_proc_U0">Block_entry_gmem_wr_proc, 0, 0, 172, 193, 0</column>
+<column name="control_s_axi_U">control_s_axi, 0, 0, 176, 296, 0</column>
+<column name="dense_layer_U0">dense_layer, 25, 0, 7978, 20265, 0</column>
+<column name="dense_layer_1_U0">dense_layer_1, 4, 0, 1955, 4094, 0</column>
+<column name="dense_layer_3_U0">dense_layer_3, 0, 0, 712, 1716, 0</column>
+<column name="entry_proc_U0">entry_proc, 0, 0, 2, 20, 0</column>
+<column name="gmem_m_axi_U">gmem_m_axi, 4, 0, 826, 725, 0</column>
+<column name="sign_and_quantize_U0">sign_and_quantize, 0, 0, 1240, 2636, 0</column>
+<column name="sign_and_quantize_2_U0">sign_and_quantize_2, 0, 0, 978, 2191, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+<column name="layer1_output_100_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_101_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_102_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_103_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_104_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_105_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_106_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_107_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_108_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_109_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_10_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_110_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_111_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_112_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_113_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_114_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_115_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_116_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_117_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_118_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_119_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_11_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_120_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_121_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_122_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_123_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_124_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_125_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_126_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_127_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_12_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_13_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_14_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_15_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_16_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_17_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_18_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_19_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_1_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_20_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_21_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_22_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_23_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_24_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_25_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_26_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_27_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_28_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_29_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_2_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_30_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_31_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_32_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_33_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_34_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_35_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_36_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_37_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_38_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_39_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_3_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_40_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_41_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_42_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_43_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_44_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_45_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_46_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_47_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_48_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_49_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_4_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_50_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_51_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_52_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_53_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_54_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_55_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_56_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_57_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_58_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_59_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_5_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_60_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_61_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_62_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_63_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_64_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_65_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_66_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_67_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_68_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_69_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_6_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_70_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_71_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_72_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_73_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_74_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_75_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_76_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_77_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_78_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_79_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_7_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_80_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_81_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_82_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_83_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_84_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_85_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_86_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_87_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_88_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_89_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_8_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_90_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_91_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_92_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_93_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_94_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_95_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_96_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_97_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_98_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_99_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_9_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_output_U">0, 99, 0, -, 2, 13, 26</column>
+<column name="layer1_quantized_1_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="layer1_quantized_2_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="layer1_quantized_3_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="layer1_quantized_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="layer2_output_10_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_11_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_12_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_13_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_14_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_15_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_16_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_17_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_18_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_19_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_1_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_20_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_21_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_22_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_23_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_24_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_25_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_26_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_27_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_28_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_29_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_2_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_30_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_31_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_32_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_33_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_34_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_35_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_36_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_37_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_38_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_39_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_3_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_40_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_41_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_42_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_43_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_44_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_45_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_46_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_47_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_48_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_49_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_4_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_50_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_51_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_52_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_53_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_54_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_55_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_56_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_57_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_58_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_59_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_5_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_60_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_61_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_62_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_63_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_6_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_7_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_8_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_9_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_output_U">0, 99, 0, -, 2, 10, 20</column>
+<column name="layer2_quantized_1_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="layer2_quantized_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="layer3_output_1_U">0, 99, 0, -, 2, 9, 18</column>
+<column name="layer3_output_2_U">0, 99, 0, -, 2, 9, 18</column>
+<column name="layer3_output_3_U">0, 99, 0, -, 2, 9, 18</column>
+<column name="layer3_output_4_U">0, 99, 0, -, 2, 9, 18</column>
+<column name="layer3_output_5_U">0, 99, 0, -, 2, 9, 18</column>
+<column name="layer3_output_6_U">0, 99, 0, -, 2, 9, 18</column>
+<column name="layer3_output_7_U">0, 99, 0, -, 2, 9, 18</column>
+<column name="layer3_output_8_U">0, 99, 0, -, 2, 9, 18</column>
+<column name="layer3_output_9_U">0, 99, 0, -, 2, 9, 18</column>
+<column name="layer3_output_U">0, 99, 0, -, 2, 9, 18</column>
+<column name="p_loc10_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="p_loc11_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="p_loc12_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="p_loc13_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="p_loc14_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="p_loc15_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="p_loc16_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="p_loc17_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="p_loc18_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="p_loc19_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="p_loc20_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="p_loc21_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="p_loc22_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="p_loc23_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="p_loc24_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="p_loc25_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="p_loc2_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="p_loc3_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="p_loc4_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="p_loc5_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="p_loc6_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="p_loc7_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="p_loc8_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="p_loc9_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="p_loc_channel_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="ys_c_U">0, 99, 0, -, 8, 64, 512</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="Block_entry_gmem_rd_proc_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer1_output_127">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer1_quantized_3">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer2_output_63">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer2_quantized_1">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_layer3_output_9">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_p_loc25_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_ready">and, 0, 0, 2, 1, 1</column>
+<column name="entry_proc_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_Block_entry_gmem_rd_proc_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer1_output_127">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer1_quantized_3">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer2_output_63">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer2_quantized_1">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_layer3_output_9">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_p_loc25_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_entry_proc_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_sync_reg_Block_entry_gmem_rd_proc_U0_ap_ready">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer1_output_127">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer1_quantized_3">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer2_output_63">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer2_quantized_1">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_layer3_output_9">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_p_loc25_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_entry_proc_U0_ap_ready">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_sync_reg_Block_entry_gmem_rd_proc_U0_ap_ready">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer1_output_127">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer1_quantized_3">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer2_output_63">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer2_quantized_1">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_layer3_output_9">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_p_loc25_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_entry_proc_U0_ap_ready">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_control_AWVALID">in, 1, s_axi, control, scalar</column>
+<column name="s_axi_control_AWREADY">out, 1, s_axi, control, scalar</column>
+<column name="s_axi_control_AWADDR">in, 6, s_axi, control, scalar</column>
+<column name="s_axi_control_WVALID">in, 1, s_axi, control, scalar</column>
+<column name="s_axi_control_WREADY">out, 1, s_axi, control, scalar</column>
+<column name="s_axi_control_WDATA">in, 32, s_axi, control, scalar</column>
+<column name="s_axi_control_WSTRB">in, 4, s_axi, control, scalar</column>
+<column name="s_axi_control_ARVALID">in, 1, s_axi, control, scalar</column>
+<column name="s_axi_control_ARREADY">out, 1, s_axi, control, scalar</column>
+<column name="s_axi_control_ARADDR">in, 6, s_axi, control, scalar</column>
+<column name="s_axi_control_RVALID">out, 1, s_axi, control, scalar</column>
+<column name="s_axi_control_RREADY">in, 1, s_axi, control, scalar</column>
+<column name="s_axi_control_RDATA">out, 32, s_axi, control, scalar</column>
+<column name="s_axi_control_RRESP">out, 2, s_axi, control, scalar</column>
+<column name="s_axi_control_BVALID">out, 1, s_axi, control, scalar</column>
+<column name="s_axi_control_BREADY">in, 1, s_axi, control, scalar</column>
+<column name="s_axi_control_BRESP">out, 2, s_axi, control, scalar</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, bnn, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, bnn, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, bnn, return value</column>
+<column name="m_axi_gmem_AWVALID">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWREADY">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWADDR">out, 64, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWID">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWLEN">out, 8, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWSIZE">out, 3, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWBURST">out, 2, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWLOCK">out, 2, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWCACHE">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWPROT">out, 3, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWQOS">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWREGION">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWUSER">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WVALID">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WREADY">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WDATA">out, 32, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WSTRB">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WLAST">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WID">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WUSER">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARVALID">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARREADY">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARADDR">out, 64, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARID">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARLEN">out, 8, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARSIZE">out, 3, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARBURST">out, 2, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARLOCK">out, 2, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARCACHE">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARPROT">out, 3, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARQOS">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARREGION">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARUSER">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RVALID">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RREADY">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RDATA">in, 32, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RLAST">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RID">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RUSER">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RRESP">in, 2, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_BVALID">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_BREADY">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_BRESP">in, 2, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_BID">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_BUSER">in, 1, m_axi, gmem, pointer</column>
+</table>
+</item>
+</section>
+</profile>

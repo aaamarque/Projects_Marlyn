@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="bnn.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_bnn_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="HLS Process Summary Group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="/apatb_bnn_top/AESL_inst_bnn//AESL_inst_bnn_activity">
+         <obj_property name="label">AESL_inst_bnn_activity</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="UseFullPath">true</obj_property>
+         <obj_property name="ElementShortName">AESL_inst_bnn_activity</obj_property>
+         <obj_property name="ObjectShortName">AESL_inst_bnn_activity</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+         <obj_property name="Render_Data">/apatb_bnn_top/AESL_inst_bnn//AESL_inst_bnn_activity.dataflowTxWaveData.Cycles</obj_property>
+         <obj_property name="Value_Data">/apatb_bnn_top/AESL_inst_bnn//AESL_inst_bnn_activity.dataflowTxWaveData.OutStanding</obj_property>
+         <obj_property name="Detail_Data">/apatb_bnn_top/AESL_inst_bnn//AESL_inst_bnn_activity.dataflowTxTooltipData</obj_property>
+         <wvobject type="group" fp_name="/apatb_bnn_top/AESL_inst_bnn/entry_proc_U0/entry_proc_U0_activity">
+            <obj_property name="label">entry_proc_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">entry_proc_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">entry_proc_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_bnn_top/AESL_inst_bnn/entry_proc_U0/entry_proc_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_bnn_top/AESL_inst_bnn/entry_proc_U0/entry_proc_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_bnn_top/AESL_inst_bnn/entry_proc_U0/entry_proc_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_bnn_top/AESL_inst_bnn/Block_entry_gmem_rd_proc_U0/Block_entry_gmem_rd_proc_U0_activity">
+            <obj_property name="label">Block_entry_gmem_rd_proc_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">Block_entry_gmem_rd_proc_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">Block_entry_gmem_rd_proc_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_bnn_top/AESL_inst_bnn/Block_entry_gmem_rd_proc_U0/Block_entry_gmem_rd_proc_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_bnn_top/AESL_inst_bnn/Block_entry_gmem_rd_proc_U0/Block_entry_gmem_rd_proc_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_bnn_top/AESL_inst_bnn/Block_entry_gmem_rd_proc_U0/Block_entry_gmem_rd_proc_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/dense_layer_U0_activity">
+            <obj_property name="label">dense_layer_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">dense_layer_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">dense_layer_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/dense_layer_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/dense_layer_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/dense_layer_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_bnn_top/AESL_inst_bnn/sign_and_quantize_U0/sign_and_quantize_U0_activity">
+            <obj_property name="label">sign_and_quantize_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">sign_and_quantize_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">sign_and_quantize_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_bnn_top/AESL_inst_bnn/sign_and_quantize_U0/sign_and_quantize_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_bnn_top/AESL_inst_bnn/sign_and_quantize_U0/sign_and_quantize_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_bnn_top/AESL_inst_bnn/sign_and_quantize_U0/sign_and_quantize_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_1_U0/dense_layer_1_U0_activity">
+            <obj_property name="label">dense_layer_1_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">dense_layer_1_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">dense_layer_1_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_bnn_top/AESL_inst_bnn/dense_layer_1_U0/dense_layer_1_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_bnn_top/AESL_inst_bnn/dense_layer_1_U0/dense_layer_1_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_bnn_top/AESL_inst_bnn/dense_layer_1_U0/dense_layer_1_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_bnn_top/AESL_inst_bnn/sign_and_quantize_2_U0/sign_and_quantize_2_U0_activity">
+            <obj_property name="label">sign_and_quantize_2_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">sign_and_quantize_2_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">sign_and_quantize_2_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_bnn_top/AESL_inst_bnn/sign_and_quantize_2_U0/sign_and_quantize_2_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_bnn_top/AESL_inst_bnn/sign_and_quantize_2_U0/sign_and_quantize_2_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_bnn_top/AESL_inst_bnn/sign_and_quantize_2_U0/sign_and_quantize_2_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_3_U0/dense_layer_3_U0_activity">
+            <obj_property name="label">dense_layer_3_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">dense_layer_3_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">dense_layer_3_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_bnn_top/AESL_inst_bnn/dense_layer_3_U0/dense_layer_3_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_bnn_top/AESL_inst_bnn/dense_layer_3_U0/dense_layer_3_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_bnn_top/AESL_inst_bnn/dense_layer_3_U0/dense_layer_3_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_bnn_top/AESL_inst_bnn/Block_entry_gmem_wr_proc_U0/Block_entry_gmem_wr_proc_U0_activity">
+            <obj_property name="label">Block_entry_gmem_wr_proc_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">Block_entry_gmem_wr_proc_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">Block_entry_gmem_wr_proc_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_bnn_top/AESL_inst_bnn/Block_entry_gmem_wr_proc_U0/Block_entry_gmem_wr_proc_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_bnn_top/AESL_inst_bnn/Block_entry_gmem_wr_proc_U0/Block_entry_gmem_wr_proc_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_bnn_top/AESL_inst_bnn/Block_entry_gmem_wr_proc_U0/Block_entry_gmem_wr_proc_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/apatb_bnn_top/AESL_inst_bnn//AESL_inst_bnn_activity">
+      <obj_property name="ElementShortName">AESL_inst_bnn_activity</obj_property>
+      <obj_property name="ObjectShortName">AESL_inst_bnn_activity</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="AESL_inst_bnn_group">
+      <obj_property name="label">AESL_inst_bnn</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_bnn_top/AESL_inst_bnn/entry_proc_U0/entry_proc_U0_activity">
+         <obj_property name="ElementShortName">entry_proc_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">entry_proc_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_bnn_top/AESL_inst_bnn/Block_entry_gmem_rd_proc_U0/Block_entry_gmem_rd_proc_U0_activity">
+         <obj_property name="ElementShortName">Block_entry_gmem_rd_proc_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Block_entry_gmem_rd_proc_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/dense_layer_U0_activity">
+         <obj_property name="ElementShortName">dense_layer_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">dense_layer_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_bnn_top/AESL_inst_bnn/sign_and_quantize_U0/sign_and_quantize_U0_activity">
+         <obj_property name="ElementShortName">sign_and_quantize_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">sign_and_quantize_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_1_U0/dense_layer_1_U0_activity">
+         <obj_property name="ElementShortName">dense_layer_1_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">dense_layer_1_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_bnn_top/AESL_inst_bnn/sign_and_quantize_2_U0/sign_and_quantize_2_U0_activity">
+         <obj_property name="ElementShortName">sign_and_quantize_2_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">sign_and_quantize_2_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_3_U0/dense_layer_3_U0_activity">
+         <obj_property name="ElementShortName">dense_layer_3_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">dense_layer_3_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_bnn_top/AESL_inst_bnn/Block_entry_gmem_wr_proc_U0/Block_entry_gmem_wr_proc_U0_activity">
+         <obj_property name="ElementShortName">Block_entry_gmem_wr_proc_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Block_entry_gmem_wr_proc_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="AESL_inst_bnn_Handshake_group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="entry_proc_U0_group">
+         <obj_property name="label">entry_proc_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="entry_proc_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="entry_proc_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/entry_proc_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/entry_proc_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/entry_proc_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/entry_proc_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="entry_proc_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="ys_c_group">
+               <obj_property name="label">ys_c(ys_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/entry_proc_U0/ys_c_blk_n">
+                  <obj_property name="ElementShortName">ys_c_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">ys_c_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/entry_proc_U0/ys_c_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/entry_proc_U0/ys_c_full_n">
+                  <obj_property name="ElementShortName">ys_c_full_n</obj_property>
+                  <obj_property name="ObjectShortName">ys_c_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/entry_proc_U0/ys_c_write">
+                  <obj_property name="ElementShortName">ys_c_write</obj_property>
+                  <obj_property name="ObjectShortName">ys_c_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Block_entry_gmem_rd_proc_U0_group">
+         <obj_property name="label">Block_entry_gmem_rd_proc_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Block_entry_gmem_rd_proc_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="Block_entry_gmem_rd_proc_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/Block_entry_gmem_rd_proc_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/Block_entry_gmem_rd_proc_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/Block_entry_gmem_rd_proc_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/Block_entry_gmem_rd_proc_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Block_entry_gmem_rd_proc_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="dense_layer_U0_group">
+         <obj_property name="label">dense_layer_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="dense_layer_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="p_ZL9golden_w1_0_group">
+               <obj_property name="label">p_ZL9golden_w1_0(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_0_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_0_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_0_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w1_0_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w1_0_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w1_1_group">
+               <obj_property name="label">p_ZL9golden_w1_1(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_1_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_1_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_1_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w1_1_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w1_1_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w1_2_group">
+               <obj_property name="label">p_ZL9golden_w1_2(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_2_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_2_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_2_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w1_2_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w1_2_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w1_3_group">
+               <obj_property name="label">p_ZL9golden_w1_3(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_3_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_3_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_3_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w1_3_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w1_3_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w1_4_group">
+               <obj_property name="label">p_ZL9golden_w1_4(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_4_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_4_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_4_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w1_4_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w1_4_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w1_5_group">
+               <obj_property name="label">p_ZL9golden_w1_5(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_5_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_5_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_5_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w1_5_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w1_5_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w1_6_group">
+               <obj_property name="label">p_ZL9golden_w1_6(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_6_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_6_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_6_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w1_6_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w1_6_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w1_7_group">
+               <obj_property name="label">p_ZL9golden_w1_7(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_7_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_7_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_7_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w1_7_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w1_7_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w1_8_group">
+               <obj_property name="label">p_ZL9golden_w1_8(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_8_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_8_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_8_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w1_8_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w1_8_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w1_9_group">
+               <obj_property name="label">p_ZL9golden_w1_9(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_9_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_9_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_9_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w1_9_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w1_9_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w1_10_group">
+               <obj_property name="label">p_ZL9golden_w1_10(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_10_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_10_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_10_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w1_10_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w1_10_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w1_11_group">
+               <obj_property name="label">p_ZL9golden_w1_11(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_11_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_11_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_11_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w1_11_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w1_11_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w1_12_group">
+               <obj_property name="label">p_ZL9golden_w1_12(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_12_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_12_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_12_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w1_12_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w1_12_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w1_13_group">
+               <obj_property name="label">p_ZL9golden_w1_13(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_13_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_13_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_13_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w1_13_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w1_13_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w1_14_group">
+               <obj_property name="label">p_ZL9golden_w1_14(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_14_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_14_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_14_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w1_14_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w1_14_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w1_15_group">
+               <obj_property name="label">p_ZL9golden_w1_15(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_15_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_15_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_15_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w1_15_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w1_15_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w1_16_group">
+               <obj_property name="label">p_ZL9golden_w1_16(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_16_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_16_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_16_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w1_16_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w1_16_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w1_17_group">
+               <obj_property name="label">p_ZL9golden_w1_17(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_17_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_17_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_17_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w1_17_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w1_17_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w1_18_group">
+               <obj_property name="label">p_ZL9golden_w1_18(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_18_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_18_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_18_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w1_18_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w1_18_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w1_19_group">
+               <obj_property name="label">p_ZL9golden_w1_19(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_19_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_19_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_19_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w1_19_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w1_19_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w1_20_group">
+               <obj_property name="label">p_ZL9golden_w1_20(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_20_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_20_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_20_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w1_20_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w1_20_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w1_21_group">
+               <obj_property name="label">p_ZL9golden_w1_21(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_21_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_21_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_21_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w1_21_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w1_21_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w1_22_group">
+               <obj_property name="label">p_ZL9golden_w1_22(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_22_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_22_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_22_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w1_22_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w1_22_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w1_23_group">
+               <obj_property name="label">p_ZL9golden_w1_23(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_23_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_23_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_23_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w1_23_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w1_23_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w1_24_group">
+               <obj_property name="label">p_ZL9golden_w1_24(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_24_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_24_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/p_ZL9golden_w1_24_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w1_24_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w1_24_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="dense_layer_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="dense_layer_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="sign_and_quantize_U0_group">
+         <obj_property name="label">sign_and_quantize_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="sign_and_quantize_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="sign_and_quantize_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/sign_and_quantize_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/sign_and_quantize_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/sign_and_quantize_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/sign_and_quantize_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="sign_and_quantize_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="dense_layer_1_U0_group">
+         <obj_property name="label">dense_layer_1_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="dense_layer_1_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="p_ZL9golden_w2_0_group">
+               <obj_property name="label">p_ZL9golden_w2_0(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_1_U0/p_ZL9golden_w2_0_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_1_U0/p_ZL9golden_w2_0_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_1_U0/p_ZL9golden_w2_0_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w2_0_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w2_0_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_1_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w2_1_group">
+               <obj_property name="label">p_ZL9golden_w2_1(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_1_U0/p_ZL9golden_w2_1_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_1_U0/p_ZL9golden_w2_1_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_1_U0/p_ZL9golden_w2_1_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w2_1_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w2_1_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_1_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w2_2_group">
+               <obj_property name="label">p_ZL9golden_w2_2(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_1_U0/p_ZL9golden_w2_2_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_1_U0/p_ZL9golden_w2_2_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_1_U0/p_ZL9golden_w2_2_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w2_2_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w2_2_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_1_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w2_3_group">
+               <obj_property name="label">p_ZL9golden_w2_3(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_1_U0/p_ZL9golden_w2_3_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_1_U0/p_ZL9golden_w2_3_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_1_U0/p_ZL9golden_w2_3_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w2_3_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w2_3_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_1_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="dense_layer_1_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_1_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_1_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_1_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_1_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="dense_layer_1_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="sign_and_quantize_2_U0_group">
+         <obj_property name="label">sign_and_quantize_2_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="sign_and_quantize_2_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="sign_and_quantize_2_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/sign_and_quantize_2_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/sign_and_quantize_2_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/sign_and_quantize_2_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/sign_and_quantize_2_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="sign_and_quantize_2_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="dense_layer_3_U0_group">
+         <obj_property name="label">dense_layer_3_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="dense_layer_3_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="p_ZL9golden_w3_0_group">
+               <obj_property name="label">p_ZL9golden_w3_0(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_3_U0/p_ZL9golden_w3_0_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_3_U0/p_ZL9golden_w3_0_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_3_U0/p_ZL9golden_w3_0_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w3_0_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w3_0_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_3_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="p_ZL9golden_w3_1_group">
+               <obj_property name="label">p_ZL9golden_w3_1(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_3_U0/p_ZL9golden_w3_1_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_3_U0/p_ZL9golden_w3_1_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_3_U0/p_ZL9golden_w3_1_ce0">
+                  <obj_property name="ElementShortName">p_ZL9golden_w3_1_ce0</obj_property>
+                  <obj_property name="ObjectShortName">p_ZL9golden_w3_1_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_3_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="dense_layer_3_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_3_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_3_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_3_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/dense_layer_3_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="dense_layer_3_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Block_entry_gmem_wr_proc_U0_group">
+         <obj_property name="label">Block_entry_gmem_wr_proc_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Block_entry_gmem_wr_proc_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="ys_group">
+               <obj_property name="label">ys(ys_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/Block_entry_gmem_wr_proc_U0/ys_blk_n">
+                  <obj_property name="ElementShortName">ys_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">ys_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/Block_entry_gmem_wr_proc_U0/ys_dout">
+                  <obj_property name="ElementShortName">ys_dout[63:0]</obj_property>
+                  <obj_property name="ObjectShortName">ys_dout[63:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/Block_entry_gmem_wr_proc_U0/ys_empty_n">
+                  <obj_property name="ElementShortName">ys_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">ys_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/Block_entry_gmem_wr_proc_U0/ys_read">
+                  <obj_property name="ElementShortName">ys_read</obj_property>
+                  <obj_property name="ObjectShortName">ys_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Block_entry_gmem_wr_proc_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/Block_entry_gmem_wr_proc_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/Block_entry_gmem_wr_proc_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/Block_entry_gmem_wr_proc_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_bnn_top/AESL_inst_bnn/Block_entry_gmem_wr_proc_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Block_entry_gmem_wr_proc_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

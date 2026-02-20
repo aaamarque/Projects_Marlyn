@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2024.2.2 (64-bit)
+# SW Build 6060944 on Thu Mar 06 19:10:01 MST 2025
+# IP Build 6050500 on Thu Mar  6 23:33:39 MST 2025
+# SharedData Build 6060542 on Thu Mar 06 10:31:07 MST 2025
+# Start of session at: Sat Dec 13 15:04:39 2025
+# Process ID         : 4060
+# Current directory  : C:/project5_bnn/hls/bnn/solution1/impl/ip
+# Command line       : vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file           : C:/project5_bnn/hls/bnn/solution1/impl/ip/vivado.log
+# Journal file       : C:/project5_bnn/hls/bnn/solution1/impl/ip\vivado.jou
+# Running On         : DESKTOP-LKSAD13
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz
+# CPU Frequency      : 1498 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16842 MB
+# Swap memory        : 6442 MB
+# Total Virtual      : 23284 MB
+# Available Virtual  : 8424 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/project5_bnn/hls/bnn/solution1/solution1_data.json outdir=C:/project5_bnn/hls/bnn/solution1/impl/ip srcdir=C:/project5_bnn/hls/bnn/solution1 sort_interfaces_ports=false
+INFO: Copied 1 ipmisc file(s) to C:/project5_bnn/hls/bnn/solution1/impl/ip/misc
+INFO: Copied 170 verilog file(s) to C:/project5_bnn/hls/bnn/solution1/impl/ip/hdl/verilog
+INFO: Copied 103 vhdl file(s) to C:/project5_bnn/hls/bnn/solution1/impl/ip/hdl/vhdl
+INFO: Copied 10 swdriver file(s) to C:/project5_bnn/hls/bnn/solution1/impl/ip/drivers
+ipx::create_core: Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 627.105 ; gain = 188.000
+INFO: Import ports from HDL: C:/project5_bnn/hls/bnn/solution1/impl/ip/hdl/vhdl/bnn.vhd (bnn)
+INFO: Add axi4lite interface s_axi_control
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add interrupt interface interrupt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: Add axi4full interface m_axi_gmem
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP C:/project5_bnn/hls/bnn/solution1/impl/ip/component.xml
+ipx::archive_core: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 632.055 ; gain = 0.000
+INFO: Created IP archive C:/project5_bnn/hls/bnn/solution1/impl/ip/xilinx_com_hls_bnn_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 13 15:05:25 2025...

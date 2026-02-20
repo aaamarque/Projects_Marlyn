@@ -1,0 +1,275 @@
+
+
+================================================================
+== Vitis HLS Report for 'Block_entry_gmem_wr_proc'
+================================================================
+* Date:           Sat Dec 13 15:02:35 2025
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        bnn
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       16|       16|  0.160 us|  0.160 us|   16|   16|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 17
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.54>
+ST_1 : Operation 18 [1/1] ( I:3.54ns O:3.54ns )   --->   "%ys_read = read i64 @_ssdm_op_Read.ap_fifo.i64P0A, i64 %ys" [bnn.cpp:136]   --->   Operation 18 'read' 'ys_read' <Predicate = true> <Delay = 3.54> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.54> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 8> <FIFO>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i62 @_ssdm_op_PartSelect.i62.i64.i32.i32, i64 %ys_read, i32 2, i32 63" [bnn.cpp:138->bnn.cpp:138]   --->   Operation 19 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%sext_ln138 = sext i62 %trunc_ln" [bnn.cpp:138->bnn.cpp:138]   --->   Operation 20 'sext' 'sext_ln138' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%gmem_addr = getelementptr i32 %gmem, i64 %sext_ln138" [bnn.cpp:138->bnn.cpp:138]   --->   Operation 21 'getelementptr' 'gmem_addr' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 7.30>
+ST_2 : Operation 22 [1/1] (3.63ns)   --->   "%p_read_207 = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_read" [bnn.cpp:136]   --->   Operation 22 'read' 'p_read_207' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_2 : Operation 23 [1/1] (7.30ns)   --->   "%empty = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i32, i32 %gmem_addr, i64 10" [bnn.cpp:138->bnn.cpp:138]   --->   Operation 23 'writereq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 9> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 3 <SV = 2> <Delay = 7.30>
+ST_3 : Operation 24 [1/1] (3.63ns)   --->   "%p_read111 = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_read1" [bnn.cpp:136]   --->   Operation 24 'read' 'p_read111' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%p_cast_i = sext i9 %p_read_207" [bnn.cpp:136]   --->   Operation 25 'sext' 'p_cast_i' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (7.30ns)   --->   "%write_ln138 = write void @_ssdm_op_Write.m_axi.p1i32, i32 %gmem_addr, i32 %p_cast_i, i4 15" [bnn.cpp:138->bnn.cpp:138]   --->   Operation 26 'write' 'write_ln138' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 4 <SV = 3> <Delay = 7.30>
+ST_4 : Operation 27 [1/1] (3.63ns)   --->   "%p_read212 = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_read2" [bnn.cpp:136]   --->   Operation 27 'read' 'p_read212' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_4 : Operation 28 [1/1] (0.00ns)   --->   "%p_cast1_i = sext i9 %p_read111" [bnn.cpp:136]   --->   Operation 28 'sext' 'p_cast1_i' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 29 [1/1] (7.30ns)   --->   "%write_ln138 = write void @_ssdm_op_Write.m_axi.p1i32, i32 %gmem_addr, i32 %p_cast1_i, i4 15" [bnn.cpp:138->bnn.cpp:138]   --->   Operation 29 'write' 'write_ln138' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 5 <SV = 4> <Delay = 7.30>
+ST_5 : Operation 30 [1/1] (3.63ns)   --->   "%p_read313 = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_read3" [bnn.cpp:136]   --->   Operation 30 'read' 'p_read313' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_5 : Operation 31 [1/1] (0.00ns)   --->   "%p_cast2_i = sext i9 %p_read212" [bnn.cpp:136]   --->   Operation 31 'sext' 'p_cast2_i' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 32 [1/1] (7.30ns)   --->   "%write_ln138 = write void @_ssdm_op_Write.m_axi.p1i32, i32 %gmem_addr, i32 %p_cast2_i, i4 15" [bnn.cpp:138->bnn.cpp:138]   --->   Operation 32 'write' 'write_ln138' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 6 <SV = 5> <Delay = 7.30>
+ST_6 : Operation 33 [1/1] (3.63ns)   --->   "%p_read414 = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_read4" [bnn.cpp:136]   --->   Operation 33 'read' 'p_read414' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_6 : Operation 34 [1/1] (0.00ns)   --->   "%p_cast3_i = sext i9 %p_read313" [bnn.cpp:136]   --->   Operation 34 'sext' 'p_cast3_i' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 35 [1/1] (7.30ns)   --->   "%write_ln138 = write void @_ssdm_op_Write.m_axi.p1i32, i32 %gmem_addr, i32 %p_cast3_i, i4 15" [bnn.cpp:138->bnn.cpp:138]   --->   Operation 35 'write' 'write_ln138' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 7.30>
+ST_7 : Operation 36 [1/1] (3.63ns)   --->   "%p_read515 = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_read5" [bnn.cpp:136]   --->   Operation 36 'read' 'p_read515' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_7 : Operation 37 [1/1] (0.00ns)   --->   "%p_cast4_i = sext i9 %p_read414" [bnn.cpp:136]   --->   Operation 37 'sext' 'p_cast4_i' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 38 [1/1] (7.30ns)   --->   "%write_ln138 = write void @_ssdm_op_Write.m_axi.p1i32, i32 %gmem_addr, i32 %p_cast4_i, i4 15" [bnn.cpp:138->bnn.cpp:138]   --->   Operation 38 'write' 'write_ln138' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 7.30>
+ST_8 : Operation 39 [1/1] (3.63ns)   --->   "%p_read616 = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_read6" [bnn.cpp:136]   --->   Operation 39 'read' 'p_read616' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_8 : Operation 40 [1/1] (0.00ns)   --->   "%p_cast5_i = sext i9 %p_read515" [bnn.cpp:136]   --->   Operation 40 'sext' 'p_cast5_i' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 41 [1/1] (7.30ns)   --->   "%write_ln138 = write void @_ssdm_op_Write.m_axi.p1i32, i32 %gmem_addr, i32 %p_cast5_i, i4 15" [bnn.cpp:138->bnn.cpp:138]   --->   Operation 41 'write' 'write_ln138' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 9 <SV = 8> <Delay = 7.30>
+ST_9 : Operation 42 [1/1] (3.63ns)   --->   "%p_read717 = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_read7" [bnn.cpp:136]   --->   Operation 42 'read' 'p_read717' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_9 : Operation 43 [1/1] (0.00ns)   --->   "%p_cast6_i = sext i9 %p_read616" [bnn.cpp:136]   --->   Operation 43 'sext' 'p_cast6_i' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 44 [1/1] (7.30ns)   --->   "%write_ln138 = write void @_ssdm_op_Write.m_axi.p1i32, i32 %gmem_addr, i32 %p_cast6_i, i4 15" [bnn.cpp:138->bnn.cpp:138]   --->   Operation 44 'write' 'write_ln138' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 10 <SV = 9> <Delay = 7.30>
+ST_10 : Operation 45 [1/1] (3.63ns)   --->   "%p_read818 = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_read8" [bnn.cpp:136]   --->   Operation 45 'read' 'p_read818' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_10 : Operation 46 [1/1] (0.00ns)   --->   "%p_cast7_i = sext i9 %p_read717" [bnn.cpp:136]   --->   Operation 46 'sext' 'p_cast7_i' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 47 [1/1] (7.30ns)   --->   "%write_ln138 = write void @_ssdm_op_Write.m_axi.p1i32, i32 %gmem_addr, i32 %p_cast7_i, i4 15" [bnn.cpp:138->bnn.cpp:138]   --->   Operation 47 'write' 'write_ln138' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 11 <SV = 10> <Delay = 7.30>
+ST_11 : Operation 48 [1/1] (3.63ns)   --->   "%p_read919 = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_read9" [bnn.cpp:136]   --->   Operation 48 'read' 'p_read919' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_11 : Operation 49 [1/1] (0.00ns)   --->   "%p_cast8_i = sext i9 %p_read818" [bnn.cpp:136]   --->   Operation 49 'sext' 'p_cast8_i' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 50 [1/1] (7.30ns)   --->   "%write_ln138 = write void @_ssdm_op_Write.m_axi.p1i32, i32 %gmem_addr, i32 %p_cast8_i, i4 15" [bnn.cpp:138->bnn.cpp:138]   --->   Operation 50 'write' 'write_ln138' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 12 <SV = 11> <Delay = 7.30>
+ST_12 : Operation 51 [1/1] (0.00ns)   --->   "%p_cast9_i = sext i9 %p_read919" [bnn.cpp:136]   --->   Operation 51 'sext' 'p_cast9_i' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 52 [1/1] (7.30ns)   --->   "%write_ln138 = write void @_ssdm_op_Write.m_axi.p1i32, i32 %gmem_addr, i32 %p_cast9_i, i4 15" [bnn.cpp:138->bnn.cpp:138]   --->   Operation 52 'write' 'write_ln138' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 13 <SV = 12> <Delay = 7.30>
+ST_13 : Operation 53 [5/5] (7.30ns)   --->   "%empty_552 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem_addr" [bnn.cpp:138->bnn.cpp:138]   --->   Operation 53 'writeresp' 'empty_552' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 14 <SV = 13> <Delay = 7.30>
+ST_14 : Operation 54 [4/5] (7.30ns)   --->   "%empty_552 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem_addr" [bnn.cpp:138->bnn.cpp:138]   --->   Operation 54 'writeresp' 'empty_552' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 15 <SV = 14> <Delay = 7.30>
+ST_15 : Operation 55 [3/5] (7.30ns)   --->   "%empty_552 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem_addr" [bnn.cpp:138->bnn.cpp:138]   --->   Operation 55 'writeresp' 'empty_552' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 16 <SV = 15> <Delay = 7.30>
+ST_16 : Operation 56 [2/5] (7.30ns)   --->   "%empty_552 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem_addr" [bnn.cpp:138->bnn.cpp:138]   --->   Operation 56 'writeresp' 'empty_552' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 17 <SV = 16> <Delay = 7.30>
+ST_17 : Operation 57 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %ys, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0, i32 0"   --->   Operation 57 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 58 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem, void @empty_7, i32 0, i32 0, void @empty_8, i32 0, i32 25, void @empty_10, void @empty_11, void @empty_8, i32 16, i32 16, i32 32, i32 16, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0"   --->   Operation 58 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 59 [1/5] (7.30ns)   --->   "%empty_552 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem_addr" [bnn.cpp:138->bnn.cpp:138]   --->   Operation 59 'writeresp' 'empty_552' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_17 : Operation 60 [1/1] (0.00ns)   --->   "%ret_ln138 = ret" [bnn.cpp:138]   --->   Operation 60 'ret' 'ret_ln138' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 3.549ns
+The critical path consists of the following:
+	fifo read operation ('ys_read', bnn.cpp:136) on port 'ys' (bnn.cpp:136) [24]  (3.549 ns)
+
+ <State 2>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', bnn.cpp:138->bnn.cpp:138) on port 'gmem' (bnn.cpp:138->bnn.cpp:138) [39]  (7.300 ns)
+
+ <State 3>: 7.300ns
+The critical path consists of the following:
+	bus write operation ('write_ln138', bnn.cpp:138->bnn.cpp:138) on port 'gmem' (bnn.cpp:138->bnn.cpp:138) [40]  (7.300 ns)
+
+ <State 4>: 7.300ns
+The critical path consists of the following:
+	bus write operation ('write_ln138', bnn.cpp:138->bnn.cpp:138) on port 'gmem' (bnn.cpp:138->bnn.cpp:138) [41]  (7.300 ns)
+
+ <State 5>: 7.300ns
+The critical path consists of the following:
+	bus write operation ('write_ln138', bnn.cpp:138->bnn.cpp:138) on port 'gmem' (bnn.cpp:138->bnn.cpp:138) [42]  (7.300 ns)
+
+ <State 6>: 7.300ns
+The critical path consists of the following:
+	bus write operation ('write_ln138', bnn.cpp:138->bnn.cpp:138) on port 'gmem' (bnn.cpp:138->bnn.cpp:138) [43]  (7.300 ns)
+
+ <State 7>: 7.300ns
+The critical path consists of the following:
+	bus write operation ('write_ln138', bnn.cpp:138->bnn.cpp:138) on port 'gmem' (bnn.cpp:138->bnn.cpp:138) [44]  (7.300 ns)
+
+ <State 8>: 7.300ns
+The critical path consists of the following:
+	bus write operation ('write_ln138', bnn.cpp:138->bnn.cpp:138) on port 'gmem' (bnn.cpp:138->bnn.cpp:138) [45]  (7.300 ns)
+
+ <State 9>: 7.300ns
+The critical path consists of the following:
+	bus write operation ('write_ln138', bnn.cpp:138->bnn.cpp:138) on port 'gmem' (bnn.cpp:138->bnn.cpp:138) [46]  (7.300 ns)
+
+ <State 10>: 7.300ns
+The critical path consists of the following:
+	bus write operation ('write_ln138', bnn.cpp:138->bnn.cpp:138) on port 'gmem' (bnn.cpp:138->bnn.cpp:138) [47]  (7.300 ns)
+
+ <State 11>: 7.300ns
+The critical path consists of the following:
+	bus write operation ('write_ln138', bnn.cpp:138->bnn.cpp:138) on port 'gmem' (bnn.cpp:138->bnn.cpp:138) [48]  (7.300 ns)
+
+ <State 12>: 7.300ns
+The critical path consists of the following:
+	bus write operation ('write_ln138', bnn.cpp:138->bnn.cpp:138) on port 'gmem' (bnn.cpp:138->bnn.cpp:138) [49]  (7.300 ns)
+
+ <State 13>: 7.300ns
+The critical path consists of the following:
+	bus response operation ('empty_552', bnn.cpp:138->bnn.cpp:138) on port 'gmem' (bnn.cpp:138->bnn.cpp:138) [50]  (7.300 ns)
+
+ <State 14>: 7.300ns
+The critical path consists of the following:
+	bus response operation ('empty_552', bnn.cpp:138->bnn.cpp:138) on port 'gmem' (bnn.cpp:138->bnn.cpp:138) [50]  (7.300 ns)
+
+ <State 15>: 7.300ns
+The critical path consists of the following:
+	bus response operation ('empty_552', bnn.cpp:138->bnn.cpp:138) on port 'gmem' (bnn.cpp:138->bnn.cpp:138) [50]  (7.300 ns)
+
+ <State 16>: 7.300ns
+The critical path consists of the following:
+	bus response operation ('empty_552', bnn.cpp:138->bnn.cpp:138) on port 'gmem' (bnn.cpp:138->bnn.cpp:138) [50]  (7.300 ns)
+
+ <State 17>: 7.300ns
+The critical path consists of the following:
+	bus response operation ('empty_552', bnn.cpp:138->bnn.cpp:138) on port 'gmem' (bnn.cpp:138->bnn.cpp:138) [50]  (7.300 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

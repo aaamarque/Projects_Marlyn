@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2.2 (64-bit)
+# SW Build 6060944 on Thu Mar 06 19:10:01 MST 2025
+# IP Build 6050500 on Thu Mar  6 23:33:39 MST 2025
+# SharedData Build 6060542 on Thu Mar 06 10:31:07 MST 2025
+# Start of session at: Sat Dec 13 15:04:39 2025
+# Process ID         : 4060
+# Current directory  : C:/project5_bnn/hls/bnn/solution1/impl/ip
+# Command line       : vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file           : C:/project5_bnn/hls/bnn/solution1/impl/ip/vivado.log
+# Journal file       : C:/project5_bnn/hls/bnn/solution1/impl/ip\vivado.jou
+# Running On         : DESKTOP-LKSAD13
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz
+# CPU Frequency      : 1498 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16842 MB
+# Swap memory        : 6442 MB
+# Total Virtual      : 23284 MB
+# Available Virtual  : 8424 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

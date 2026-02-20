@@ -1,0 +1,982 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: bnn.cpp, Line: 56, Column: 34 }
+Function:        _Z11dense_layerPKjS0_Piiiii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'popcount32(ap_uint<32>)'
+    DebugLoc:        { File: bnn.cpp, Line: 6, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'dense_layer(unsigned int const*, unsigned int const*, int*, int, int, int, int)'
+    DebugLoc:        { File: bnn.cpp, Line: 30, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: bnn.cpp, Line: 46, Column: 31 }
+Function:        _Z11dense_layerPKjS0_Piiiii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xnor32(ap_uint<32>, ap_uint<32>)'
+    DebugLoc:        { File: bnn.cpp, Line: 16, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'dense_layer(unsigned int const*, unsigned int const*, int*, int, int, int, int)'
+    DebugLoc:        { File: bnn.cpp, Line: 30, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: bnn.cpp, Line: 123, Column: 5 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - Callee:          'dense_layer(unsigned int const*, unsigned int const*, int*, int, int, int, int)'
+    DebugLoc:        { File: bnn.cpp, Line: 30, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'bnn(unsigned int const*, int*)'
+    DebugLoc:        { File: bnn.cpp, Line: 87, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: bnn.cpp, Line: 124, Column: 5 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - Callee:          'sign_and_quantize(int*, unsigned int*, int)'
+    DebugLoc:        { File: bnn.cpp, Line: 65, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'bnn(unsigned int const*, int*)'
+    DebugLoc:        { File: bnn.cpp, Line: 87, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: bnn.cpp, Line: 76, Column: 26 }
+Function:        _Z17sign_and_quantizePiPji
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_76_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: bnn.cpp, Line: 41, Column: 26 }
+Function:        _Z11dense_layerPKjS0_Piiiii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_41_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: bnn.cpp, Line: 87, Column: 0 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_134_2
+  - String:          ''' ('
+  - LoopLoc:         'bnn.cpp:134:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          bnn
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: bnn.cpp, Line: 87, Column: 0 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_115_1
+  - String:          ''' ('
+  - LoopLoc:         'bnn.cpp:115:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          bnn
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: bnn.cpp, Line: 65, Column: 0 }
+Function:        _Z17sign_and_quantizePiPji
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_76_2
+  - String:          ''' ('
+  - LoopLoc:         'bnn.cpp:76:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          sign_and_quantize
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: bnn.cpp, Line: 30, Column: 0 }
+Function:        _Z11dense_layerPKjS0_Piiiii
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_34_1
+  - String:          ''' ('
+  - LoopLoc:         'bnn.cpp:34:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense_layer
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '2'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: bnn.cpp, Line: 123, Column: 5 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - Callee:          'dense_layer(unsigned int const*, unsigned int const*, int*, int, int, int, int)'
+    DebugLoc:        { File: bnn.cpp, Line: 30, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'bnn(unsigned int const*, int*)'
+    DebugLoc:        { File: bnn.cpp, Line: 87, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: bnn.cpp, Line: 124, Column: 5 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - Callee:          'sign_and_quantize(int*, unsigned int*, int)'
+    DebugLoc:        { File: bnn.cpp, Line: 65, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'bnn(unsigned int const*, int*)'
+    DebugLoc:        { File: bnn.cpp, Line: 87, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_bnn_ir
+Args:            
+  - Callee:          'bnn(unsigned int const*, int*)'
+    DebugLoc:        { File: bnn.cpp, Line: 87, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_bnn_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: bnn.cpp, Line: 30, Column: 0 }
+Function:        _Z11dense_layerPKjS0_Piiiii.3
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_41_2
+  - String:          ''' ('
+  - LoopLoc:         'bnn.cpp:41:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense_layer
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: bnn.cpp, Line: 30, Column: 0 }
+Function:        _Z11dense_layerPKjS0_Piiiii.3
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_41_2
+  - String:          ''' ('
+  - LoopLoc:         'bnn.cpp:41:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense_layer
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: bnn.cpp, Line: 30, Column: 0 }
+Function:        _Z11dense_layerPKjS0_Piiiii.1
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_41_2
+  - String:          ''' ('
+  - LoopLoc:         'bnn.cpp:41:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense_layer
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: bnn.cpp, Line: 30, Column: 0 }
+Function:        _Z11dense_layerPKjS0_Piiiii.1
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_41_2
+  - String:          ''' ('
+  - LoopLoc:         'bnn.cpp:41:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense_layer
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: bnn.cpp, Line: 96, Column: 15 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          input_buffer
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: bnn.cpp, Line: 99, Column: 6 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          layer1_output
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: bnn.cpp, Line: 102, Column: 15 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          layer1_quantized
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: bnn.cpp, Line: 105, Column: 6 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          layer2_output
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: bnn.cpp, Line: 108, Column: 15 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          layer2_quantized
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: bnn.cpp, Line: 111, Column: 6 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          layer3_output
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '25'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        IN43seq
+  - ArrayName:       IN
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'bnn(unsigned int const*, int*)'
+    DebugLoc:        { File: bnn.cpp, Line: 87, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.503
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.505
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.507
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.509
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.511
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.513
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.515
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.517
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.519
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.521
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.523
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.525
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.527
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.529
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.531
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.533
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.535
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.537
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.539
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.541
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.543
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.545
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.547
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.549
+  - OrigAccess:      load
+    DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.551
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: bnn.cpp, Line: 138, Column: 1 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '10'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        ys44seq
+  - ArrayName:       ys
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'bnn(unsigned int const*, int*)'
+    DebugLoc:        { File: bnn.cpp, Line: 87, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: bnn.cpp, Line: 136, Column: 8 }
+  - OrigDirection:   write
+  - OrigID:          entry.store.592
+  - OrigAccess:      store
+    DebugLoc:        { File: bnn.cpp, Line: 136, Column: 8 }
+  - OrigDirection:   write
+  - OrigID:          entry.store.594
+  - OrigAccess:      store
+    DebugLoc:        { File: bnn.cpp, Line: 136, Column: 8 }
+  - OrigDirection:   write
+  - OrigID:          entry.store.596
+  - OrigAccess:      store
+    DebugLoc:        { File: bnn.cpp, Line: 136, Column: 8 }
+  - OrigDirection:   write
+  - OrigID:          entry.store.598
+  - OrigAccess:      store
+    DebugLoc:        { File: bnn.cpp, Line: 136, Column: 8 }
+  - OrigDirection:   write
+  - OrigID:          entry.store.600
+  - OrigAccess:      store
+    DebugLoc:        { File: bnn.cpp, Line: 136, Column: 8 }
+  - OrigDirection:   write
+  - OrigID:          entry.store.602
+  - OrigAccess:      store
+    DebugLoc:        { File: bnn.cpp, Line: 136, Column: 8 }
+  - OrigDirection:   write
+  - OrigID:          entry.store.604
+  - OrigAccess:      store
+    DebugLoc:        { File: bnn.cpp, Line: 136, Column: 8 }
+  - OrigDirection:   write
+  - OrigID:          entry.store.606
+  - OrigAccess:      store
+    DebugLoc:        { File: bnn.cpp, Line: 136, Column: 8 }
+  - OrigDirection:   write
+  - OrigID:          entry.store.608
+  - OrigAccess:      store
+    DebugLoc:        { File: bnn.cpp, Line: 136, Column: 8 }
+  - OrigDirection:   write
+  - OrigID:          entry.store.611
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          IN43seq
+  - ArrayName:       IN
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'bnn(unsigned int const*, int*)'
+    DebugLoc:        { File: bnn.cpp, Line: 87, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: bnn.cpp, Line: 138, Column: 1 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: bnn.cpp, Line: 138, Column: 1 }
+  - OrigDirection:   write
+  - OrigID:          ys44seq
+  - ArrayName:       ys
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'bnn(unsigned int const*, int*)'
+    DebugLoc:        { File: bnn.cpp, Line: 87, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: bnn.cpp, Line: 30, Column: 0 }
+Function:        _Z11dense_layerPKjS0_Piiiii
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_41_2
+  - String:          ''' ('
+  - LoopLoc:         'bnn.cpp:41:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense_layer
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: bnn.cpp, Line: 30, Column: 0 }
+Function:        _Z11dense_layerPKjS0_Piiiii
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_41_2
+  - String:          ''' ('
+  - LoopLoc:         'bnn.cpp:41:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dense_layer
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: bnn.cpp, Line: 71, Column: 22 }
+Function:        _Z17sign_and_quantizePiPji
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_71_1
+  - String:          '''('
+  - LoopLoc:         'bnn.cpp:71:22'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ./golden.h, Line: 4, Column: 0 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=25 variable=_ZL9golden_w1'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  bnn
+  - String:          ' '
+  - varLoc:          './golden.h:4:0'
+  - String:          ' '
+  - PragmaSrcLoc:    'bnn.cpp:35:9'
+    DebugLoc:        { File: bnn.cpp, Line: 35, Column: 9 }
+  - VarName:         golden_w1
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: bnn.cpp, Line: 35, Column: 9 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '25'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            golden_w1
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ./golden.h, Line: 327, Column: 0 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=4 variable=_ZL9golden_w2'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  bnn
+  - String:          ' '
+  - varLoc:          './golden.h:327:0'
+  - String:          ' '
+  - PragmaSrcLoc:    'bnn.cpp:35:9'
+    DebugLoc:        { File: bnn.cpp, Line: 35, Column: 9 }
+  - VarName:         golden_w2
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: bnn.cpp, Line: 35, Column: 9 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '4'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            golden_w2
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ./golden.h, Line: 356, Column: 0 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=_ZL9golden_w3'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  bnn
+  - String:          ' '
+  - varLoc:          './golden.h:356:0'
+  - String:          ' '
+  - PragmaSrcLoc:    'bnn.cpp:35:9'
+    DebugLoc:        { File: bnn.cpp, Line: 35, Column: 9 }
+  - VarName:         golden_w3
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: bnn.cpp, Line: 35, Column: 9 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            golden_w3
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ./golden.h, Line: 356, Column: 0 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZL9golden_w3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ./golden.h, Line: 327, Column: 0 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZL9golden_w2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ./golden.h, Line: 4, Column: 0 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZL9golden_w1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '25'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '25'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'bnn(unsigned int const*, int*)'
+    DebugLoc:        { File: bnn.cpp, Line: 87, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '25'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: bnn.cpp, Line: 138, Column: 1 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '10'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'bnn(unsigned int const*, int*)'
+    DebugLoc:        { File: bnn.cpp, Line: 87, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: bnn.cpp, Line: 138, Column: 1 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '10'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: bnn.cpp, Line: 117, Column: 20 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - Callee:          Block_entry_gmem_rd_proc
+    DebugLoc:        { File: bnn.cpp, Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'bnn(unsigned int const*, int*)'
+    DebugLoc:        { File: bnn.cpp, Line: 87, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: bnn.cpp, Line: 123, Column: 5 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - Callee:          'dense_layer(unsigned int const*, unsigned int const*, int*, int, int, int, int) (.1)'
+    DebugLoc:        { File: bnn.cpp, Line: 30, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'bnn(unsigned int const*, int*)'
+    DebugLoc:        { File: bnn.cpp, Line: 87, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: bnn.cpp, Line: 124, Column: 5 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - Callee:          'sign_and_quantize(int*, unsigned int*, int) (.2)'
+    DebugLoc:        { File: bnn.cpp, Line: 65, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'bnn(unsigned int const*, int*)'
+    DebugLoc:        { File: bnn.cpp, Line: 87, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: bnn.cpp, Line: 127, Column: 5 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - Callee:          'dense_layer(unsigned int const*, unsigned int const*, int*, int, int, int, int) (.3)'
+    DebugLoc:        { File: bnn.cpp, Line: 30, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'bnn(unsigned int const*, int*)'
+    DebugLoc:        { File: bnn.cpp, Line: 87, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: bnn.cpp, Line: 128, Column: 5 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - Callee:          'sign_and_quantize(int*, unsigned int*, int)'
+    DebugLoc:        { File: bnn.cpp, Line: 65, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'bnn(unsigned int const*, int*)'
+    DebugLoc:        { File: bnn.cpp, Line: 87, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: bnn.cpp, Line: 131, Column: 5 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - Callee:          'dense_layer(unsigned int const*, unsigned int const*, int*, int, int, int, int)'
+    DebugLoc:        { File: bnn.cpp, Line: 30, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'bnn(unsigned int const*, int*)'
+    DebugLoc:        { File: bnn.cpp, Line: 87, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: bnn.cpp, Line: 138, Column: 1 }
+Function:        _Z3bnnPKjPi
+Args:            
+  - Callee:          Block_entry_gmem_wr_proc
+    DebugLoc:        { File: bnn.cpp, Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'bnn(unsigned int const*, int*)'
+    DebugLoc:        { File: bnn.cpp, Line: 87, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

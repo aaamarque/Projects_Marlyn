@@ -1,0 +1,97 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1 5 2 3 4",
+    "file": "bnn.cpp",
+    "fileloc": 87,
+    "instructions": 349,
+    "loads": {
+      "L": 10,
+      "T": 25
+    },
+    "name": "bnn",
+    "stores": {
+      "L": 25,
+      "T": 10
+    },
+    "total_instructions": 3236
+  },
+  "1": {
+    "basicblocks": 133,
+    "calls": "",
+    "file": "bnn.cpp",
+    "fileloc": 22,
+    "instructions": 1577,
+    "loads": {
+      "G": 50,
+      "L": 25
+    },
+    "name": "dense_layer",
+    "stores": {
+      "L": 128
+    },
+    "total_instructions": 1577
+  },
+  "2": {
+    "basicblocks": 69,
+    "calls": "",
+    "file": "bnn.cpp",
+    "fileloc": 22,
+    "instructions": 396,
+    "loads": {
+      "G": 8,
+      "L": 4
+    },
+    "name": "dense_layer",
+    "stores": {
+      "L": 64
+    },
+    "total_instructions": 396
+  },
+  "3": {
+    "basicblocks": 101,
+    "calls": "",
+    "file": "bnn.cpp",
+    "fileloc": 65,
+    "instructions": 397,
+    "loads": {
+      "L": 64
+    },
+    "name": "sign_and_quantize",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 397
+  },
+  "4": {
+    "basicblocks": 20,
+    "calls": "",
+    "file": "bnn.cpp",
+    "fileloc": 22,
+    "instructions": 116,
+    "loads": {
+      "G": 2,
+      "L": 4
+    },
+    "name": "dense_layer",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 116
+  },
+  "5": {
+    "basicblocks": 70,
+    "calls": "",
+    "file": "bnn.cpp",
+    "fileloc": 65,
+    "instructions": 401,
+    "loads": {
+      "L": 128
+    },
+    "name": "sign_and_quantize",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 401
+  }
+}

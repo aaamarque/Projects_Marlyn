@@ -1,0 +1,61 @@
+<pragmas>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<32, false>::ap_bit_ref(ap_int_base<32, false>*, int)" off="0" region="0" recursive="0"/>
+<pragma file="bnn.cpp" line="94" pragmaType="dataflow" parentfunction="bnn" disable_start_propagation="0"/>
+<pragma file="bnn.cpp" line="135" pragmaType="unroll" parentfunction="bnn" factor="-1" skip_exit_check="0"/>
+<pragma file="bnn.cpp" line="116" pragmaType="unroll" parentfunction="bnn" factor="-1" skip_exit_check="0"/>
+<pragma file="bnn.cpp" line="88" pragmaType="interface" parentfunction="bnn" mode="m_axi" port="IN" bundle="gmem" offset="slave" name="" depth="25" num_read_outstanding="16" num_write_outstanding="-1" max_burst_read_length="32" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="bnn.cpp" line="89" pragmaType="interface" parentfunction="bnn" mode="m_axi" port="ys" bundle="gmem" offset="slave" name="" depth="10" num_read_outstanding="-1" num_write_outstanding="16" max_burst_read_length="-1" max_burst_write_length="16" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="bnn.cpp" line="90" pragmaType="interface" parentfunction="bnn" mode="s_axilite" port="IN" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="bnn.cpp" line="91" pragmaType="interface" parentfunction="bnn" mode="s_axilite" port="ys" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="bnn.cpp" line="92" pragmaType="interface" parentfunction="bnn" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="bnn.cpp" line="97" pragmaType="array_partition" parentfunction="bnn" dim="1" factor="0" mode="complete" dynamic="0" variable="input_buffer"/>
+<pragma file="bnn.cpp" line="100" pragmaType="array_partition" parentfunction="bnn" dim="1" factor="0" mode="complete" dynamic="0" variable="layer1_output"/>
+<pragma file="bnn.cpp" line="103" pragmaType="array_partition" parentfunction="bnn" dim="1" factor="0" mode="complete" dynamic="0" variable="layer1_quantized"/>
+<pragma file="bnn.cpp" line="106" pragmaType="array_partition" parentfunction="bnn" dim="1" factor="0" mode="complete" dynamic="0" variable="layer2_output"/>
+<pragma file="bnn.cpp" line="109" pragmaType="array_partition" parentfunction="bnn" dim="1" factor="0" mode="complete" dynamic="0" variable="layer2_quantized"/>
+<pragma file="bnn.cpp" line="112" pragmaType="array_partition" parentfunction="bnn" dim="1" factor="0" mode="complete" dynamic="0" variable="layer3_output"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>& ap_int_base<32, false>::operator&=<32, false>(ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<32, false>::operator=(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::RType<32, false>::plus operator+<32, false, 32, false>(ap_int_base<32, false> const&, ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::operator()(int, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, false>::RType<32, false>::logic operator&<33, false, 32, false>(ap_int_base<33, false> const&, ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::RType<32, false>::logic operator&<32, false, 32, false>(ap_int_base<32, false> const&, ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<32>::ap_uint<32, false>(ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::RType<($_0)32, false>::logic operator&<32, false>(ap_int_base<32, false> const&, unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<32>::ap_uint<33>(ap_uint<33> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base(unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<32>::ap_uint(unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::RType<32, false>::logic operator^<32, false, 32, false>(ap_int_base<32, false> const&, ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::operator[](int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<32>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::operator~() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="range" off="0" region="0" recursive="0"/>
+<pragma file="bnn.cpp" line="66" pragmaType="inline" parentfunction="sign_and_quantize" off="1" region="0" recursive="0"/>
+<pragma file="bnn.cpp" line="72" pragmaType="pipeline" parentfunction="sign_and_quantize" off="0" ii="1" rewind="0" style=""/>
+<pragma file="bnn.cpp" line="77" pragmaType="unroll" parentfunction="sign_and_quantize" factor="-1" skip_exit_check="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<6, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
+<pragma file="bnn.cpp" line="31" pragmaType="inline" parentfunction="dense_layer" off="1" region="0" recursive="0"/>
+<pragma file="bnn.cpp" line="36" pragmaType="unroll" parentfunction="dense_layer" factor="2" skip_exit_check="0"/>
+<pragma file="bnn.cpp" line="35" pragmaType="pipeline" parentfunction="dense_layer" off="0" ii="1" rewind="0" style=""/>
+<pragma file="bnn.cpp" line="42" pragmaType="unroll" parentfunction="dense_layer" factor="2" skip_exit_check="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<32, false>::ap_range_ref(ap_int_base<32, false>*, int, int)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<32, false>::ssdm_int(unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi33ELb0EEC2EDq33_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<33>::ap_uint<33, false>(ap_int_base<33, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="bnn.cpp" line="17" pragmaType="inline" parentfunction="xnor32" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base<33, false>(ap_int_base<33, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::RType<32, false>::arg1 operator<<<32, false>(ap_int_base<32, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, false>::RType<($_0)32, false>::logic operator&<33, false>(ap_int_base<33, false> const&, unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<6>::ap_uint<32, false>(ap_range_ref<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<6, false>::ap_int_base<32, false>(ap_range_ref<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="bnn.cpp" line="7" pragmaType="inline" parentfunction="popcount32" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::RType<32, false>::arg1 operator>><32, false>(ap_int_base<32, false> const&, int)" off="0" region="0" recursive="0"/>
+</pragmas>

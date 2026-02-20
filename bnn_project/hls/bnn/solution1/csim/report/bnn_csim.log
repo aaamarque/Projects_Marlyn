@@ -1,0 +1,85 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+make[1]: Entering directory 'C:/project5_bnn/hls/bnn/solution1/csim/build'
+   Compiling ../../../../bnn_test.cpp in debug mode
+   Compiling ../../../../bnn.cpp in debug mode
+   Generating csim.exe
+make[1]: Leaving directory 'C:/project5_bnn/hls/bnn/solution1/csim/build'
+========================================
+BNN Multi-Layer Testbench
+Testing 10 samples
+========================================
+
+-----------------------------------------------------------
+Sample 1 - Label: 7
+  Layer 1: PASSED ✓
+  Layer 2: PASSED ✓
+  Layer 3: PASSED ✓
+Result: ALL LAYERS PASSED ✓✓✓
+-----------------------------------------------------------
+Sample 2 - Label: 2
+  Layer 1: PASSED ✓
+  Layer 2: PASSED ✓
+  Layer 3: PASSED ✓
+Result: ALL LAYERS PASSED ✓✓✓
+-----------------------------------------------------------
+Sample 3 - Label: 1
+  Layer 1: PASSED ✓
+  Layer 2: PASSED ✓
+  Layer 3: PASSED ✓
+Result: ALL LAYERS PASSED ✓✓✓
+-----------------------------------------------------------
+Sample 4 - Label: 0
+  Layer 1: PASSED ✓
+  Layer 2: PASSED ✓
+  Layer 3: PASSED ✓
+Result: ALL LAYERS PASSED ✓✓✓
+-----------------------------------------------------------
+Sample 5 - Label: 4
+  Layer 1: PASSED ✓
+  Layer 2: PASSED ✓
+  Layer 3: PASSED ✓
+Result: ALL LAYERS PASSED ✓✓✓
+-----------------------------------------------------------
+Sample 6 - Label: 1
+  Layer 1: PASSED ✓
+  Layer 2: PASSED ✓
+  Layer 3: PASSED ✓
+Result: ALL LAYERS PASSED ✓✓✓
+-----------------------------------------------------------
+Sample 7 - Label: 4
+  Layer 1: PASSED ✓
+  Layer 2: PASSED ✓
+  Layer 3: PASSED ✓
+Result: ALL LAYERS PASSED ✓✓✓
+-----------------------------------------------------------
+Sample 8 - Label: 9
+  Layer 1: PASSED ✓
+  Layer 2: PASSED ✓
+  Layer 3: PASSED ✓
+Result: ALL LAYERS PASSED ✓✓✓
+-----------------------------------------------------------
+Sample 9 - Label: 5
+  Layer 1: PASSED ✓
+  Layer 2: PASSED ✓
+  Layer 3: PASSED ✓
+Result: ALL LAYERS PASSED ✓✓✓
+-----------------------------------------------------------
+Sample 10 - Label: 9
+  Layer 1: PASSED ✓
+  Layer 2: PASSED ✓
+  Layer 3: PASSED ✓
+Result: ALL LAYERS PASSED ✓✓✓
+
+========================================
+SUMMARY:
+  Total samples:    10
+  All layers pass:  10
+  Any layer fail:   0
+  Layer 1 failures: 0
+  Layer 2 failures: 0
+  Layer 3 failures: 0
+  Overall accuracy: 100%
+========================================
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

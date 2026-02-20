@@ -1,0 +1,49 @@
+{
+  "0": {
+    "basicblocks": 7,
+    "calls": "1 2 1 2 1",
+    "file": "bnn.cpp",
+    "fileloc": 87,
+    "instructions": 177,
+    "loads": {
+      "L": 10,
+      "T": 25
+    },
+    "name": "bnn",
+    "stores": {
+      "L": 25,
+      "T": 10
+    },
+    "total_instructions": 1361
+  },
+  "1": {
+    "basicblocks": 38,
+    "calls": "",
+    "file": "bnn.cpp",
+    "fileloc": 22,
+    "instructions": 148,
+    "loads": {
+      "L": 4
+    },
+    "name": "dense_layer",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 148
+  },
+  "2": {
+    "basicblocks": 104,
+    "calls": "",
+    "file": "bnn.cpp",
+    "fileloc": 65,
+    "instructions": 370,
+    "loads": {
+      "L": 32
+    },
+    "name": "sign_and_quantize",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 370
+  }
+}

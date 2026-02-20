@@ -1,0 +1,131 @@
+{
+    "1": {
+        "name": "dense_layer.3",
+        "file": "bnn.cpp",
+        "fileloc": "131",
+        "instructions": "450",
+        "total_instructions": "450",
+        "calls": "",
+        "basicblocks": "9",
+        "loads": {
+            "G": "4",
+            "L": "11"
+        },
+        "stores": {
+            "L": "12"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "bnn",
+        "file": "bnn.cpp",
+        "fileloc": "87",
+        "instructions": "256",
+        "total_instructions": "7754",
+        "calls": "3 7 8 6 4 5 1 2",
+        "basicblocks": "1"
+    },
+    "2": {
+        "name": "Block_entry_gmem_wr_proc",
+        "file": "bnn.cpp",
+        "fileloc": "136",
+        "instructions": "39",
+        "total_instructions": "39",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "3": {
+        "name": "entry_proc",
+        "file": "bnn.cpp",
+        "fileloc": "0",
+        "instructions": "4",
+        "total_instructions": "4",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "4": {
+        "name": "dense_layer.1",
+        "file": "bnn.cpp",
+        "fileloc": "127",
+        "instructions": "1082",
+        "total_instructions": "1082",
+        "calls": "",
+        "basicblocks": "36",
+        "loads": {
+            "G": "8",
+            "L": "65"
+        },
+        "stores": {
+            "L": "66"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "sign_and_quantize.2",
+        "file": "bnn.cpp",
+        "fileloc": "128",
+        "instructions": "210",
+        "total_instructions": "210",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "sign_and_quantize",
+        "file": "bnn.cpp",
+        "fileloc": "124",
+        "instructions": "288",
+        "total_instructions": "288",
+        "calls": "",
+        "basicblocks": "8",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "Block_entry_gmem_rd_proc",
+        "file": "bnn.cpp",
+        "fileloc": "117",
+        "instructions": "57",
+        "total_instructions": "57",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "8": {
+        "name": "dense_layer",
+        "file": "bnn.cpp",
+        "fileloc": "123",
+        "instructions": "5368",
+        "total_instructions": "5368",
+        "calls": "",
+        "basicblocks": "68",
+        "loads": {
+            "G": "50",
+            "L": "129"
+        },
+        "stores": {
+            "L": "130"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}
