@@ -11,7 +11,7 @@
 │   └── README.md
 ```
 
-**Demo Video:** STM32.MOV (See project folder)
+**Demo Video:** STM32_BlinkingDemo [https://youtube.com/shorts/9eavC1E6Wio](https://youtube.com/shorts/9eavC1E6Wio)
 
 ## Project Overview
 
